@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html lang="fr-FR" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Nicolas Brival"/>
+    <meta name="author" content="Nicolas Brival"/>
+    <meta name="keywords" content="My website"/>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-formulaire.css" />
+    <title> Portfolio Nicolas Brival - Javascript Full Stack Developer</title>
+    <link rel="icon" type="image/jpg" href="Logo_NB.png"> <!-- icon before title-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- icons -->
+    <script defer src="script.js"></script>
+
+</head>
+
+    <body>
+        
+        <div id = "container" aria-label= "My portfolio container">
+            
+            <header>
+
+                <div id = "logo-titre">
+                    <!-- <img src="Logo_NB.png" id ="logo-titre__img" alt="Logo Nicolas Brival" /> -->
+                    <h1>Portfolio.</h1>
+                </div>
+                <nav id = "navbar-menu" aria-label= "Navbar menu">
+                    <ul>
+                        <li><a class="navbar-menu__element" href="index.html"><strong>Home</strong></a></li>
+                        <li><a class="navbar-menu__element" href="#">Presentation</a></li>
+                        <li><a class="navbar-menu__element" href="#">Projects</a></li>
+                        <li><a class="navbar-menu__element" href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div id="active-elements">
+                </div>
+
+            </header>
+
+            <main id = "main-container" aria-label= "My website container">
+
+                <h1 id="titre">Contact</h1>
+    
+                <!-- valid" -->
+    
+                <form class="contact-form" id="contact-form__background-effect">
+                
+                    <div id="contact-form_container_items">
+                    
+                        <!-- First Name -->
+                        <div class="contact-form__item">
+                            <label class = "contact-form__item__label" for="first-name">First name*</label> 
+                            <input
+                                type="text"
+                                class ="contact-form__input"
+                                id="first-name"
+                                name="first-name"
+                                size="30"
+                                pattern="[a-z A-Z]{2,80}"
+                                title=""
+                                placeholder="John"
+                                required
+                                value="John"
+                            />
+                        </div>
+    
+                            <!-- Last Name -->
+                        <div class="contact-form__item">
+                            <label class = "contact-form__item__label" for="last-name">Last name*</label>
+                            <input
+                                type="text"
+                                class ="contact-form__input"
+                                id="last-name"
+                                name="last-name"
+                                size="30"
+                                pattern="[a-z A-Z]{2,80}"
+                                title=""
+                                placeholder="Smith"
+                                required
+                                value="Smith"
+                            />
+                        </div>
+    
+                            <!-- E-mail -->
+                        <div class="contact-form__item">
+                            <label class = "contact-form__item__label" for="e-mail">E-mail*</label>
+                            <input
+                                type="text"
+                                class ="contact-form__input"
+                                id="e-mail"
+                                name="e-mail"
+                                size="30"
+                                pattern="[a-z A-Z 0-9.-_@]{5,100}"
+                                title=""
+                                placeholder="abc@gmail.com"
+                                required
+                                value="abc@gmail.com"
+                            />
+                        </div>
+    
+                        <!-- Company or other -->
+                        <div class="contact-form__item">
+                            <label class = "contact-form__item__label" for="company-or-other">Company or other (optional)</label>
+                            <input
+                                type="text"
+                                class ="contact-form__input"
+                                id="company-or-other"
+                                name="company-or-other"
+                                size="30"
+                                pattern="[a-z A-Z 0-9 .-]{1,80}"
+                                title=""
+                                placeholder="My company name"
+                                value="FSocity"
+                            />
+                        </div>
+    
+                        <!-- Phone number -->
+                        <div class="contact-form__item">
+                            <label class = "contact-form__item__label" for="phone-number">Phone number (optional)</label>
+                            <input
+                                type="tel"
+                                class ="contact-form__input"
+                                id="phone-number"
+                                name="phone-number"
+                                size="30"
+                                pattern="[0-9 +]{10,12}"
+                                title=""
+                                placeholder="+33601020304"
+                                value="+33601020304"
+                            />
+                        </div>
+    
+                        <!-- Subject : What can i help with you-->
+                        <div class="contact-form__item">
+                            <label class = "contact-form__item__label" for="listbox">What can I help with you ?*</label>
+                            <select
+                                type="text"
+                                class ="contact-form__item_listbox__select"
+                                id="listbox"
+                                name="listbox"
+                            >
+                                <option value="Please choose an option">Please choose an option</option>
+                                <option value="option 1">option 1</option>
+                                <option value="option 2">option 2</option>
+                                <option value="option 3">option 3</option>
+                            </select>
+                        </div>
+    
+                        <!-- Message -->
+                        <div class="contact-form__item">
+                            <label class = "contact-form__item__label" for="message">Message*</label>
+                            <textarea
+                                type="text"
+                                class ="contact-form__input"
+                                id="message"
+                                name="message"
+                                size="30"
+                                title=""
+                                placeholder="Message"
+                                required
+                                value="blablabla"
+                            ></textarea>
+                        </div>
+    
+                        <p>* required</p>
+    
+                        <!-- checkbox privacy statement -->
+                        <div class="contact-form__item">
+                            <input
+                                type="checkbox"
+                                class ="contact-form__input"
+                                id="checkbox-privacy-statement"
+                                name="checkbox-privacy-statement"
+                                title=""
+                                required
+                            >
+                            <label id="contact-form__item_checkbox__checkbox-privacy-statement-label" for="checkbox-privacy-statement">I have read the privacy statement</label>
+                        </div>
+    
+                        <!-- <p></p>je ne suis pas un robot</p> -->  
+    
+                        <button id = "contact-form__button" onclick="actionClick()">Send the message</button> <!-- onmouseover : équivalent hover-->
+    
+                    </div>
+                    
+                </form>
+    
+            </main>
+            
+            <footer role="contentinfo">
+                <div id="footer__container-icons">
+                    <i class="footer__container-icons__item fa fa-linkedin-square"><a href="https://linkedin.com/"></a></i> <!-- ne fonctionne pas -->
+                    <i class="footer__container-icons__item fa fa-twitter"></i>
+                    <i class="footer__container-icons__item fa fa-instagram"></i>
+                    <i class="footer__container-icons__item fa fa-slack"></i>
+                </div>
+                <p>Copyright © 2023 Nicolas Brival - Tous droits réservés</p>
+            </footer>
+        </div>
+    </body>
+</html>

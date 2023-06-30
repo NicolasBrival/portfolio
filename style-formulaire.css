@@ -1,0 +1,129 @@
+/* */
+
+/* Police(s)  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* la police doit etre utilisee avec des guillements : 'Roboto' */
+
+/* Variables */
+:root {
+    --color-blue: rgba(0, 0, 165); /* var(--color-blue) */
+    --color-blue-light:rgba(0, 0, 165, 0.5);
+    --color-blue-light-plus:rgba(180, 180, 180, 0.8);
+    --color-green: rgba(0, 165, 10);
+    --color-red:rgba(165, 0, 0, 0.5);
+    --color-grey: rgb(180, 180, 180);
+}
+  
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Roboto';
+}
+
+#container{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--bg-color);
+    background: url("./images/blue-5457731.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+/* ------------------------------------------------------------ navbar menu ------------------------------------------------------------ */
+
+/*  logo +name part */
+
+header{
+    height: 7%;
+    display : flex;
+    align-items: center;
+    background-color: var(--principal-color);
+    box-shadow: 0 7px 5px rgba(51, 51, 51, 0.4);
+    text-shadow: var(--text-shadow);
+}
+
+h1{
+    text-align: center;
+    padding: 40px 0 10px 0;
+    font-size: 3rem;
+    font-style: italic;
+    color: var(--color-blue-light);
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form{
+    margin: auto;
+    height: 100%;
+    width: 480px;
+    background: linear-gradient(to top right, var(--color-blue), var(--color-blue-light));
+    border: 2px solid var(--color-grey);
+    border-radius: 50px;
+}
+
+#contact-form_container_items{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.contact-form__item__label{
+    font-size: 14px;
+    display: block;
+    font-weight: bold;
+    font-style: italic;
+    padding: 5px;
+    color: var(--color-blue-light-plus);
+}
+
+.contact-form__input{
+    border-radius: 5px;
+}
+
+form p{
+    padding: 3%;
+    text-align: left;
+    color: var(--color-blue-light-plus);
+    font-style: italic;
+    font-size: 14px;
+}
+
+#contact-form__button{
+    padding: 10px;
+    margin: 50px auto;
+    background: linear-gradient(to bottom left, var(--color-blue-light), var(--color-blue-light-plus));
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form__item {
+    padding: 2%;
+    margin: auto;
+}
+
+#contact-form__item_checkbox__checkbox-privacy-statement-label{
+    font-size: 14px;
+    color: var(--color-grey);
+    font-style: italic;
+}
+
+input:invalid{
+    border: 2px solid var(--color-green);
+}
+  
+input:valid{
+    border: 2px solid var(--color-green);
+}
+
+@keyframes body-move {
+    0% { transform: translateY(-850px); }
+    100% { transform: translate(0px, 0); }
+  }
