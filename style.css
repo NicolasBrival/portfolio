@@ -435,6 +435,8 @@ footer p{
         height: 55%;
         font-size: 22px;
         width: 20%;
+        margin: 0 10%;
+        justify-content: space-between;
     }
     
     footer p{
@@ -448,6 +450,37 @@ footer p{
 
 /* Mobile */
 
+@media screen and (max-width: 480px) {
 
+    #color-selector{
+        height:20px;
+        width: 20px;
+    }
+    
+    #dark-mode-button{
+        height:20px;
+        width: 20px;
+    }
+
+    #presentation p{
+        font-size: 16px;
+        width: 100%;
+        padding: 5%;
+        margin: 0 0 0 10%;
+    }
+
+    #projects p{
+        font-size: 12px;
+    }
+
+    #footer__container-icons{
+        font-size: 16px;
+        justify-content: space-between;
+    }
+    
+    footer p{
+        font-size: 10px;
+    }
+}
 
 /* Wide */
