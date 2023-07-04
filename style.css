@@ -324,7 +324,7 @@ footer p{
     header{
         height: 45%;
         flex-direction: column;
-
+        
         background-color: rgba(0, 0, 255, 0);
         box-shadow: none;
     }
