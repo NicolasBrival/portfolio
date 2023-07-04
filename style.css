@@ -43,11 +43,12 @@ body{
     background: url("./images/blue-5457731.jpg");
     background-repeat: no-repeat;
     background-size:cover;
+    background-position: center;
 }
 
 /* ------------------------------------------------------------ navbar menu ------------------------------------------------------------ */
 
-/*  logo +name part */
+/*  logo + name part */
 
 header{
     height: 7%;
@@ -305,3 +306,126 @@ footer p{
     0% { transform: translate(-1080px, 0); }
     100% { transform: translate(0px, 0); }
   }
+
+/* ------------------------------------------------------------ responsive ------------------------------------------------------------ */
+
+/* tablet */
+
+@media screen and (max-width: 820px) {
+
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*  logo + name part */
+
+    header{
+        height: 7%;
+        flex-direction: column;
+        
+    }
+
+    #logo-titre{
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    #logo-titre__img{
+        width: 0%;
+    }
+
+    h1{
+        width: 100%;
+        font-size: 30px;
+        margin-left: 0;
+        padding: 5%;
+    }
+
+    /*  menu */
+
+    #navbar-menu{
+    width : 100%;
+    padding : 0 15%;
+    margin: 5% auto;
+}
+
+    ul{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .navbar-menu__element{
+        height: 50%;
+        width: 70%;
+        margin:1.5%;
+        padding: 3% 0;
+        background-color: var(--principal-color);
+        box-shadow: 2px 3px 2px 2px rgba(51, 51, 51, 0.4);
+
+    }
+    #active-elements{
+        height: 100%;
+        width : 60%;
+        padding: 1.5% 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items:flex-end;
+    }
+
+    /* project's part */
+
+    main{
+        height: 86%;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #projects{
+        width: 100%;
+        margin: 5% 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    #projects p{
+        font-size: 18px;
+    }
+
+    #presentation{
+        width: 50%;
+        position: relative;
+    }
+    
+    #presentation p{
+        font-size: 24px;
+        margin: 10% 0 0 0%;
+        width: 100%;
+        padding: 5%;
+    }
+
+    /* footer */
+    
+    #footer__container-icons{
+        font-size: 22px;
+        width: 20%;
+    }
+    
+    footer p{
+        font-size: 14px;
+        padding: 0.5% 0 0 0;
+    }
+
+}
+
+
+/* Mobile */
+
+
+
+/* Wide */
